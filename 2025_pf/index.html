@@ -25,6 +25,72 @@
     <script src="./js/main.js?ver=1.6"></script> <!-- 메인JS 최종 수정 25.02.22 -->
 
 </head>
+<style>
+    /* 로딩 스크린 */
+    #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+    }
+    #loading-screen .inner img {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+    }
+    .loading-text {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .loading-text p {
+        color: #fff;
+        font-size: 0.5rem;
+        font-weight: bold;
+        opacity: 0;
+        animation: jump 0.5s infinite steps(1);
+    }
+    /* 각 글자에 지연 애니메이션 적용 */
+    .loading-text p:nth-child(1) { animation-delay: 0s; }
+    .loading-text p:nth-child(2) { animation-delay: 0.1s; }
+    .loading-text p:nth-child(3) { animation-delay: 0.2s; }
+    .loading-text p:nth-child(4) { animation-delay: 0.3s; }
+    .loading-text p:nth-child(5) { animation-delay: 0.4s; }
+    .loading-text p:nth-child(6) { animation-delay: 0.5s; }
+    .loading-text p:nth-child(7) { animation-delay: 0.6s; }
+    .loading-text p:nth-child(8) { animation-delay: 0.7s; }
+    .loading-text p:nth-child(9) { animation-delay: 0.8s; }
+    .loading-text p:nth-child(10) { animation-delay: 0.9s; }
+
+    @keyframes jump {
+        0%, 100% { transform: translateY(0); opacity: 1; }
+        50% { transform: translateY(-30%); }
+    }
+
+    /* 로딩 화면 숨기기 */
+    @keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; visibility: hidden; }
+    }
+</style>
+<script>
+    setTimeout(() => {
+            document.getElementById('loading-screen').style.animation = 'fadeOut 1s forwards';
+        }, 2000);
+</script>
+<div id="loading-screen">
+    <div class="inner">
+        <img src="./img/h_logo.png" alt="">
+        <div class="loading-text"><p>L</p><p>O</p><p>A</p><p>D</p><p>I</p><p>N</p><p>G</p><p>.</p><p>.</p><p>.</p></div>
+    </div>
+</div>
 <body>
     <header id="header">
         <div class="inner flex">
