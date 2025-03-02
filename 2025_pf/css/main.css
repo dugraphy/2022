@@ -322,6 +322,7 @@ body::-webkit-scrollbar-thumb {
     height: 100%;
     text-align: center;
     padding: 10% 0;
+    border-radius: 5px;
     transition: 0.5s;
 }
 #sec-01 .inner .right>div .text .name {
@@ -458,6 +459,7 @@ body::-webkit-scrollbar-thumb {
         height: 100%;
         text-align: center;
         padding: 5% 0;
+        border-radius: 5px;
         transition: 0.5s;
     }
     #sec-01 .inner .right>div .text .name {
