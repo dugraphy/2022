@@ -1137,18 +1137,18 @@ body::-webkit-scrollbar-thumb {
     #sec-06 .inner .profile .text {
         margin: auto 0 auto 30px;
     }
-    #sec-06 .inner .profile .text i {
+    #sec-06 .inner .profile .text div {
         display: block;
     }
-    #sec-06 .inner .profile .text i img {
+    #sec-06 .inner .profile .text div img {
         display: inline-block;
         width: 20px;
         margin: 10px 0;
     }
-    #sec-06 .inner .profile .text i::before {
+    #sec-06 .inner .profile .text div::before {
         vertical-align: middle;
     }
-    #sec-06 .inner .profile .text i>p {
+    #sec-06 .inner .profile .text div>p {
         margin-left: 10px;
         display: inline-block;
         font-size: 0.6rem;
