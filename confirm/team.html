@@ -40,21 +40,21 @@
 		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans+SC:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+SC:wght@200..900&family=Noto+Serif+TC:wght@200..900&display=swap');
 	</style>
 
-	<script>
+<script>
 
-		const lenis = new Lenis({
-			// 추가된 부분
-			duration: 3,
-			easing: (t) => Math.min(2, 1.005 - Math.pow(10, -5 * t)),
-		});
+	const lenis = new Lenis({
+		// 추가된 부분
+		duration: 2,
+		easing: (t) => Math.min(2, 1.005 - Math.pow(5, -5 * t)),
+	});
 
-		function raf(time) {
-			lenis.raf(time)
-			requestAnimationFrame(raf)
-		}
-
+	function raf(time) {
+		lenis.raf(time)
 		requestAnimationFrame(raf)
-	</script>
+	}
+
+	requestAnimationFrame(raf)
+</script>
 </head>
 
 <body>
