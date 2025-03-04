@@ -483,7 +483,7 @@
 }
 #lecture:before {
     content: "";
-    background: url(../img/main/lecture_bg.jpg) no-repeat 100% 50%;
+    background: url(../img/main/lecture_bg.jpg) no-repeat 100% top/cover;
     position: absolute;
     top: 0;
     right: 0;
@@ -683,6 +683,9 @@
 #sec01 .banner {
     position: relative;
 }
+#sec01 .banner>img {
+    width: 100%;
+}
 #sec01 .banner>h3 {
     position: absolute;
     top:50%;
@@ -700,6 +703,9 @@
 }
 #sec01 .history {
     position: relative;
+}
+#sec01 .history>figure>img {
+    width: 100%;
 }
 #sec01 .history .certification01 {
     position: absolute;
@@ -885,6 +891,9 @@
         overflow: hidden;
         z-index: 1;
     }
+    #sec01 .banner>img {
+        width: auto;
+    }
     #sec01 .banner>h3 {
         position: absolute;
         top:50%;
@@ -905,6 +914,9 @@
         position: relative;
         overflow: hidden;
         z-index: 1;
+    }
+    #sec01 .history>figure>img {
+        width: auto;
     }
     #sec01 .history .certification01 {
         position: absolute;
@@ -1064,8 +1076,8 @@
 }
 
 #sec02 {
-    background: url(../img/main/sec02_bg.jpg) no-repeat left bottom/50%;
-    height: 1228px;
+    background: url(../img/main/sec02_bg.jpg) no-repeat left center/50%;
+    height: auto;
 }
 #sec02 .container {
     width: 1338px;
@@ -1120,7 +1132,7 @@
 #sec02 .right {
     width: 60%;
     margin-left: auto;
-    padding-top: 5%;
+    padding: 5% 0;
 }
 #sec02 .right>div {
     margin: 30px 0;
@@ -1233,7 +1245,7 @@
     #sec02 .right {
         width: 100%;
         margin-left: 0;
-        padding-top: 25%;
+        padding: 30% 0 15%;
     }
     #sec02 .right>div {
         margin: 30px 0;
@@ -1293,6 +1305,10 @@
     background: url(../img/main/sec03_top_bg.png) no-repeat center top/cover;
     display: block;
     height: 100px;
+}
+#sec03 figure>img {
+    width: 100%;
+    height: 1200px;
 }
 #sec03 figure .title {
     position: absolute;
@@ -2057,6 +2073,9 @@
 }
 #sec07 .title {
     position: relative;
+}
+#sec07 .title>img {
+    width: 100%;
 }
 #sec07 .title>.txt {
     position: absolute;
