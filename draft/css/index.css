@@ -1115,7 +1115,7 @@
     font-size: 40px;
     cursor: pointer;
 }
-#full-menu .menu-wrap > .depth1 {
+#full-menu .menu-wrap > ul {
     display: flex;
     gap: 50px;
 }
