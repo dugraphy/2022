@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // 여유 공간(padding 등)을 위해 40px 정도 더해줌
-    const totalHeight = defaultHeight + maxSubHeight + 50; 
+    const totalHeight = defaultHeight + maxSubHeight + 40; 
 
     // 2. 마우스 올렸을 때 높이 늘리기
     gnb.addEventListener('mouseenter', function() {

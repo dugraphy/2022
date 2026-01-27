@@ -1119,25 +1119,25 @@
     display: flex;
     gap: 50px;
 }
-#full-menu .menu-wrap > ul > .depth1 {
+#full-menu .menu-wrap > ul > .sub-depth1 {
     margin: 20px 0;
     text-align: center;
 }
-#full-menu .menu-wrap > ul > .depth1 > a {
+#full-menu .menu-wrap > ul > .sub-depth1 > a {
     font-size: 28px;
     font-weight: 800;
 }
-#full-menu .menu-wrap > ul > .depth1 > .depth2 > li{
+#full-menu .menu-wrap > ul > .sub-depth1 > .sub-depth2 > li{
     margin-top: 30px;
 }
-#full-menu .menu-wrap > ul > .depth1 > .depth2 > li:first-child {
+#full-menu .menu-wrap > ul > .sub-depth1 > .sub-depth2 > li:first-child {
     margin-top: 50px;
 }
-#full-menu .menu-wrap > ul > .depth1 > .depth2 > li > a {
+#full-menu .menu-wrap > ul > .sub-depth1 > .sub-depth2 > li > a {
     font-size: 22px;
     font-weight: 600;
 }
-#full-menu .menu-wrap > ul > .depth1 > .depth2 > li > a:after {
+#full-menu .menu-wrap > ul > .sub-depth1 > .sub-depth2 > li > a:after {
     content: "";
     display: block;
     margin: 15px auto 0;
@@ -1147,7 +1147,7 @@
     background: #fff;
     transition: all 0.5s;
 }
-#full-menu .menu-wrap > ul > .depth1 > .depth2 > li > a:hover:after {
+#full-menu .menu-wrap > ul > .sub-depth1 > .sub-depth2 > li > a:hover:after {
     width: 100%;
 }
 /* 애니메이션 */
