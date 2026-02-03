@@ -217,13 +217,11 @@
     background: #333;
 }
 .sec04 {
-    margin: 100px 0;
+    padding: 100px 0;
     background: url('../img/sub02/presbyopia/presbyopia-sec04-img-01.jpg') no-repeat center/cover;
-    height: 864px;
 }
 .sec04 .inner .text-cont {
     text-align: center;
-    padding-top: 100px;
 }
 .sec04 .inner .text-cont h3 {
     margin-bottom: 30px;
