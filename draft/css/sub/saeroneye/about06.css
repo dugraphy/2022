@@ -124,7 +124,7 @@
 /* ================= HERO & DUMMY ================= */
 .sub-visual {
     height: 550px;
-    background: url('../../../img/sub/cataract01/cataract01-visual-img-01.jpg') no-repeat bottom/100%;
+    background: url('../../../img/sub/about06/about06-visual-img-01.jpg') no-repeat bottom/100%;
     display: flex;
     align-items: center;
 }
@@ -149,183 +149,111 @@
     margin: 100px 0;
 }
 .sec01 .inner{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-.sec01 .inner .img-cont {
-    width: 50%;
-    overflow: hidden;
-    aspect-ratio: 16 / 9;
-}
-.sec01 .inner .text-cont {
-    width: 50%;
-    margin: auto 0;
-}
-.sec01 .inner .text-cont h3 {
-    margin-bottom: 30px;
-    font-size: 28px;
-    font-weight: 800;
-    line-height: 1.3;
-    color: var(--primary-color);
-} 
-.sec01 .inner .text-cont p {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.3;
-    color: #333;
-}
-.sec02 {
-    margin: 100px 0;
-}
-.sec02 .inner .text-cont {
+    position: relative;
     text-align: center;
 }
-.sec02 .inner .text-cont h3 {
-    margin-bottom: 50px;
-    font-size: 28px;
-    font-weight: 800;
-    line-height: 1.3;
-    color: var(--primary-color);
-}
-.sec02 .inner .twentytwenty-container.active .twentytwenty-overlay .twentytwenty-before-label, .sec02 .inner .twentytwenty-container.active .twentytwenty-overlay .twentytwenty-after-label{
-    opacity: 1;
-}
-.sec02 .inner .twentytwenty-before-label, .sec02 .inner .twentytwenty-after-label {
-    opacity: 1;
-}
-.sec02 .inner .twentytwenty-before-label:before {
-    content: "노안";
-}
-.sec02 .inner .twentytwenty-after-label:before {
-    content: "정상안";
-}
-.sec02 .inner .twentytwenty-container.active .twentytwenty-overlay .twentytwenty-before-label:before, .sec02 .inner .twentytwenty-container.active .twentytwenty-overlay .twentytwenty-after-label:before{
-    background-color: rgba(0,0,0,.5);
-}
-.sec03 {
-    margin: 100px 0;
-}
-.sec03 .inner .img-cont {
-    display: flex;
-}
-.sec03 .inner .img-cont p {
-    width: 180px;
-    height: 40px;
-    margin: 30px auto 0;
-    align-content: center;
-    text-align: center;
-    background: var(--primary-color);
-    border-radius: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.3;
-    color: #fff;
-}
-.sec03 .inner .img-cont div:last-child p {
-    background: #333;
-}
-.sec04 {
-    padding: 100px 0;
-    background: url('../../../img/sub/cataract01/cataract01-sec04-img-01.jpg') no-repeat center/cover;
-}
-.sec04 .inner .text-cont {
-    text-align: center;
-}
-.sec04 .inner .text-cont h3 {
-    margin-bottom: 50px;
-    font-size: 28px;
-    font-weight: 800;
-    line-height: 1.3;
-    color: var(--primary-color);
-}
-.sec04 .inner .text-box p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 550px;
-    height: 70px;
-    background: #fff;
-    margin-bottom: 30px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.3;
-    color: #333;
-    text-align: center;
-}
-.sec04 .inner .text-box p:last-child {
-    margin-bottom: 0;
-}
-.sec04 .inner .sub-text {
-    margin-top: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.3;
-    color: #333;
-}
-.sec05 {
-    margin: 100px 0;
-}
-.sec05 .inner {
-    text-align: center;
-}
-.sec05 .inner h3 {
+.sec01 .inner h3 {
     margin-bottom: 15px;
     font-size: 28px;
     font-weight: 800;
     line-height: 1.3;
     color: var(--primary-color);
 }
-.sec05 .inner > p {
+.sec01 .inner>p {
     margin-bottom: 50px;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.3;
     color: #333;
 }
-.sec05 .inner .check-cont {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 30px;
+.sec01 .inner .img-cont {
     margin-bottom: 30px;
-    background: #f9f9f9;
-    padding: 30px 50px;
+}
+.sec01 .inner .img-cont img {
+    border: 3px solid var(--primary-color);
     border-radius: 30px;
 }
-.sec05 .inner .check-cont .check-text {
-    width: calc(50% - 30px);
+.sec01 .inner .btn-cont {
+    display: flex;
+    gap: 15px;
     text-align: left;
 }
-.sec05 .inner .check-cont .check-text label {
-    display: flex;
-    align-items: center;
+.sec01 .inner .btn-cont a {
+    width: 150px;
+    height: 30px;
+    align-content: center;
+    text-align: center;
+    border-radius: 30px;
+    color: #333;
+    background: #f9f9f9;
+    border: 1px solid #333;
 }
-.sec05 .inner .check-cont .check-text .chk_box {
+.sec01 .inner .btn-cont a img {
+    width: 15px;
+    margin-right: 5px;
+    vertical-align: inherit;
+}
+.sec01 .inner .btn-cont a p {
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-color: #b9b9b9;
-    background-image: url(https://cdn.imweb.me/upload/S20251110b45c25a0c39dc/f401b850ccffd.png);
-    background-repeat: no-repeat;
-    background-size: 25px;
-    flex-shrink: 0;
-    border-radius: 50%;
-    background-position: 50% 50%;
-    transition: 0.25s;
-}
-.sec05 .inner .check-cont .check-text input[type="checkbox"] {
-    display: none;
-}
-.sec05 .inner .check-cont .check-text input[type="checkbox"]:checked + .chk_box {
-    background-color: var(--primary-color);
-}
-.sec05 .inner .check-cont .check-text p {
     font-size: 18px;
     font-weight: 500;
+    line-height: 1.3;
     color: #333;
-    padding-left: 15px;
 }
+.sec01 .inner .address-cont {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    padding: 30px 50px;
+    text-align: left;
+    border-radius: 30px;
+    background: var(--primary-color);
+}
+.sec01 .inner .address-cont h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #fff;
+}
+.sec01 .inner .address-cont p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #fff;
+}
+.sec02 {
+    margin: 100px 0;
+}
+.sec02 .inner .flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.sec02 .inner .flex-wrap h3 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: var(--primary-color);
+}
+.sec02 .inner .flex-wrap p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+.sec02 .inner .flex-wrap .bar {
+    display: block;
+    width: 2px;
+    height: auto;
+    background: #f9f9f9;
+}
+
+
+
+
+
+
 .info {
     background: #f9f9f9;
 }
