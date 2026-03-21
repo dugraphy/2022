@@ -701,10 +701,10 @@
     border-radius: 30px;
 }
 .interior .inner .tab-wrap .tab .tab-menu li.on {
-    background: #fff;
     border-radius: 30px;
 }
 .interior .inner .tab-wrap .tab .tab-menu li.on a {
+    background: #fff;
     color: #333;
 }
 .interior .inner .tab-wrap .tab .tab-cont {
@@ -748,6 +748,7 @@
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
 }
 .interior .inner .tab-wrap .tab .tab-cont .item03 .tab-slider .slick-dots li {
     display: inline-block;
