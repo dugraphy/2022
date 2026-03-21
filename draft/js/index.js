@@ -80,6 +80,7 @@ $(document).ready(function() {
     });
 
     var equipmentSlider=$(".equipment-slider").slick({
+        infinite: true,
         autoplay:true,
         autoplaySpeed:1500,
         slidesToShow: 3,
@@ -93,12 +94,12 @@ $(document).ready(function() {
     
     $('.equipment-slider figure').eq(3).addClass('on');
     $('.equipment-slider').on('afterChange', function(e,s,c){
-    if ($(window).width() < 768) {
-        $('.equipment-slider figure').eq(c+1).addClass('on').siblings().removeClass('on');
-    }else {
-        $('.equipment-slider figure').eq(c+4).addClass('on').siblings().removeClass('on');
-    }   
-});
+        if ($(window).width() < 768) {
+            $('.equipment-slider figure').eq(c+1).addClass('on').siblings().removeClass('on');
+        }else {
+            $('.equipment-slider figure').eq(c+4).addClass('on').siblings().removeClass('on');
+        }   
+    });
 });
 $(function(){
     $('.tab-menu li').on('click',function(){
