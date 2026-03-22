@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비급여항목 서브페이지</title>
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/sub/notice/price.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/css/twentytwenty.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript" src="../../js/sub/notice/price.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.event.move.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.twentytwenty.min.js"></script>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+</head>
+<body>
+
+    <header id="header">
+        <div class="inner">
+            <h1 class="logo">
+                <a href="https://dugraphy.github.io/draft/index.html"><img src="../../img/h-logo.png" alt="서울새론안과"></a>
+            </h1>
+
+             <nav class="gnb">
+                <ul>
+                    <li class="depth1"><a href="#!">서울새론안과의원 소개</a>
+                        <ul class="depth2">
+                            <li><a href="https://dugraphy.github.io/draft/sub/saeroneye/about01.html">병원소개</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/saeroneye/about02.html">의료진소개</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/saeroneye/about03.html">의료장비</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/saeroneye/about04.html">둘러보기</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/saeroneye/about05.html">진료안내</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/saeroneye/about06.html">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><a href="#!">노안백내장센터</a>
+                         <ul class="depth2">
+                            <li><a href="https://dugraphy.github.io/draft/sub/cataract/cataract01.html">노안</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/cataract/cataract02.html">백내장</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/cataract/cataract03.html">노안백내장수술</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/cataract/cataract04.html">인공수정체</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><a href="#!">시력교정센터</a>
+                        <ul class="depth2">
+                            <li><a href="https://dugraphy.github.io/draft/sub/vision/vision01.html">올레이저 2DAY 라섹</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/vision/vision02.html">안내렌즈삽입술</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/vision/vision03.html">초고도근난시</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/vision/vision04.html">드림렌즈/하드렌즈</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><a href="#!">안구건조증클리닉</a>
+                        <ul class="depth2">
+                            <li><a href="https://dugraphy.github.io/draft/sub/dryeye/dryeye01.html">건조증이란</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/dryeye/dryeye02.html">치료 및 주의사항</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/dryeye/dryeye03.html">시술과정 및 치료대상</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><a href="#!">망막녹내장클리닉</a>
+                        <ul class="depth2">
+                            <li><a href="https://dugraphy.github.io/draft/sub/retina/retina01.html">황반변성</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/retina/retina02.html">당뇨망막병증</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/retina/retina03.html">망막박리</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/retina/retina04.html">포도막염</a></li>
+                            <li><a href="https://dugraphy.github.io/draft/sub/retina/retina05.html">녹내장</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1"><a href="https://dugraphy.github.io/draft/sub/examination/examination01.html">안종합검진</a></li>
+                    <li class="depth1"><a href="#!">고객센터/이벤트</a>
+                        <ul class="depth2">
+                            <li><a href="#!">새론안과 소식</a></li>
+                            <li><a href="#!">이벤트</a></li>
+                            <li><a href="#!">비급여항목</a></li>
+                            <li><a href="#!">증명서발급</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="util">
+                <a href="#!" class="btn-login">로그인</a>
+                <a href="#!" class="btn-join">회원가입</a>
+                <button class="btn-ham">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="full-menu">
+        <button class="btn-close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="menu-wrap">
+            <h2>전체 메뉴</h2>
+            <ul>
+                <li class="sub-depth1"><a href="#!">서울새론안과의원 소개</a>
+                    <ul class="sub-depth2">
+                        <li><a href="https://dugraphy.github.io/draft/sub/saeroneye/about01.html">병원소개</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/saeroneye/about02.html">의료진소개</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/saeroneye/about03.html">의료장비</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/saeroneye/about04.html">둘러보기</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/saeroneye/about05.html">진료안내</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/saeroneye/about06.html">오시는길</a></li>
+                    </ul>
+                </li>
+                <li class="sub-depth1"><a href="#!">노안백내장센터</a>
+                    <ul class="sub-depth2">
+                        <li><a href="https://dugraphy.github.io/draft/sub/cataract/cataract01.html">노안</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/cataract/cataract02.html">백내장</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/cataract/cataract03.html">노안백내장수술</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/cataract/cataract04.html">인공수정체</a></li>
+                    </ul>
+                </li>
+                <li class="sub-depth1"><a href="#!">시력교정센터</a>
+                    <ul class="sub-depth2">
+                        <li><a href="https://dugraphy.github.io/draft/sub/vision/vision01.html">올레이저 2DAY 라섹</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/vision/vision02.html">안내렌즈삽입술</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/vision/vision03.html">초고도근난시</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/vision/vision04.html">드림렌즈/하드렌즈</a></li>
+                    </ul>
+                </li>
+                <li class="sub-depth1"><a href="#!">안구건조증클리닉</a>
+                    <ul class="sub-depth2">
+                        <li><a href="https://dugraphy.github.io/draft/sub/dryeye/dryeye01.html">건조증이란</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/dryeye/dryeye02.html">치료 및 주의사항</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/dryeye/dryeye03.html">시술과정 및 치료대상</a></li>
+                    </ul>
+                </li>
+                <li class="sub-depth1"><a href="#!">망막녹내장클리닉</a>
+                    <ul class="sub-depth2">
+                        <li><a href="https://dugraphy.github.io/draft/sub/retina/retina01.html">황반변성</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/retina/retina02.html">당뇨망막병증</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/retina/retina03.html">망막박리</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/retina/retina04.html">포도막염</a></li>
+                        <li><a href="https://dugraphy.github.io/draft/sub/retina/retina05.html">녹내장</a></li>
+                    </ul>
+                </li>
+                <li class="sub-depth1"><a href="https://dugraphy.github.io/draft/sub/examination/examination01.html">안종합검진</a></li>
+                <li class="sub-depth1"><a href="#!">고객센터/이벤트</a>
+                    <ul class="sub-depth2">
+                        <li><a href="#!">새론안과 소식</a></li>
+                        <li><a href="#!">이벤트</a></li>
+                        <li><a href="#!">비급여항목</a></li>
+                        <li><a href="#!">증명서발급</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="sub-visual"></section>
+    <section class="sec01">
+        <div class="inner">
+            <h3>비급여항목</h3>
+            <div class="text-cont">
+                <h4>제증명수수료</h4>
+                <table>
+                    <colgroup>
+                        <col style="width: 10%;">
+                        <col style="width: 50%;">
+                        <col style="width: 10%;">
+                        <col style="width: 20%;">
+                        <col style="width: 10%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th colspan="2">진료비용항목</th>
+                            <th colspan="2">항목별 가격정보(단위:원)</th>
+                            <th rowspan="2">특이사항</th>
+                        </tr>
+                        <tr>
+                            <th>코드</th>
+                            <th>명칭</th>
+                            <th>구분</th>
+                            <th>비용</th>
+                        </tr>
+                        <tr>
+                            <td>PDE010001</td>
+                            <td>영문 일반진단서</td>
+                            <td></td>
+                            <td>20,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PDZ010000</td>
+                            <td>일반진단서</td>
+                            <td></td>
+                            <td>10,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PDZ020001</td>
+                            <td>상해진단서 - 3주미만</td>
+                            <td></td>
+                            <td>100,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PDZ020002</td>
+                            <td>상해진단서 - 3주이상</td>
+                            <td></td>
+                            <td>150,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PDZ080000</td>
+                            <td>병무용진단서</td>
+                            <td></td>
+                            <td>20,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PDZ090002</td>
+                            <td>입퇴원확인서</td>
+                            <td></td>
+                            <td>3,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PDZ090007</td>
+                            <td>진료확인서</td>
+                            <td></td>
+                            <td>3,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PDZ110101</td>
+                            <td>진료기록부 등 사본 복사수수료(1~5매까지, 1매당)</td>
+                            <td></td>
+                            <td>1,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PDZ110102</td>
+                            <td>진료기록부사본발행(6매부터)</td>
+                            <td></td>
+                            <td>100</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>PDZ160000</td>
+                            <td>제증명 사본</td>
+                            <td></td>
+                            <td>1,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>진료소견서(보험회사)</td>
+                            <td></td>
+                            <td>30,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>진료소견서(개인용도)</td>
+                            <td></td>
+                            <td>10,000</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>수술확인서</td>
+                            <td></td>
+                            <td>3,000</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-cont">
+                <h4>행위료</h4>
+                <table>
+                    <colgroup>
+                        <col style="width: 15%;">
+                        <col style="width: 15%;">
+                        <col style="width: 15%;">
+                        <col style="width: 20%;">
+                        <col style="width: 5%;">
+                        <col style="width: 5%;">
+                        <col style="width: 5%;">
+                        <col style="width: 5%;">
+                        <col style="width: 5%;">
+                        <col style="width: 10%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2">중분류</th>
+                            <th rowspan="2">소분류</th>
+                            <th colspan="2">진료비용항목</th>
+                            <th colspan="5">항목별 가격정보(단위:원)</th>
+                            <th rowspan="2">특이사항</th>
+                        </tr>
+                        <tr>
+                            <th>코드</th>
+                            <th>명칭</th>
+                            <th>구분</th>
+                            <th>비용</th>
+                            <th>최저비용</th>
+                            <th>최고비용</th>
+                            <th>치료재료대포함</th>
+                        </tr>
+                        <tr>
+                            <td>검사료</td>
+                            <td>시기능검사</td>
+                            <td>E7801</td>
+                            <td>눈의 계측검사[편측] - 레이저 간섭계 비용</td>
+                            <td>편측</td>
+                            <td></td>
+                            <td>50,000</td>
+                            <td>100,000</td>
+                            <td></td>
+                            <td>급여 인정기준 외 실시한 경우 비급여</td>
+                        </tr>
+                        <tr>
+                            <td>검사료</td>
+                            <td>시기능검사</td>
+                            <td>EZ796</td>
+                            <td>안구광학단층촬영[편측]</td>
+                            <td>편측</td>
+                            <td></td>
+                            <td>50,000</td>
+                            <td>100,000</td>
+                            <td></td>
+                            <td>급여 인정기준 외 실시한 경우 비급여</td>
+                        </tr>
+                        <tr>
+                            <td>이학요법료</td>
+                            <td>기타 이학요법료</td>
+                            <td>MZ015</td>
+                            <td>안구건조증치료 - 레이저광선치료</td>
+                            <td></td>
+                            <td>150,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>이학요법료</td>
+                            <td>기타 이학요법료</td>
+                            <td>MZ013</td>
+                            <td>안구건조증치료 - 마사지요법</td>
+                            <td></td>
+                            <td>100,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>처치 및 수술료 등</td>
+                            <td>감각기</td>
+                            <td></td>
+                            <td>결막모반제거술</td>
+                            <td></td>
+                            <td></td>
+                            <td>50,000</td>
+                            <td>100,000</td>
+                            <td></td>
+                            <td>크기에 따라 다름</td>
+                        </tr>
+                        <tr>
+                            <td>처치 및 수술료 등</td>
+                            <td>처치 및 수술료 등</td>
+                            <td></td>
+                            <td>안내렌즈삽입술</td>
+                            <td></td>
+                            <td></td>
+                            <td>4,000,000</td>
+                            <td>5,800,000</td>
+                            <td></td>
+                            <td>수술방법의 차이</td>
+                        </tr>
+                        <tr>
+                            <td>기타</td>
+                            <td>기타</td>
+                            <td></td>
+                            <td>렌즈피팅</td>
+                            <td>양안</td>
+                            <td>50,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>시력교정술료</td>
+                            <td>레이저각막절삭성형술(라식)</td>
+                            <td>2Z9610001</td>
+                            <td>커스텀 S라식</td>
+                            <td></td>
+                            <td></td>
+                            <td>1,390,000</td>
+                            <td>2,200,000</td>
+                            <td></td>
+                            <td>수술방법의 차이</td>
+                        </tr>
+                        <tr>
+                            <td>시력교정술료</td>
+                            <td>레이저각막절삭성형술(라식)</td>
+                            <td>2Z9610001</td>
+                            <td>커스텀 라식</td>
+                            <td></td>
+                            <td></td>
+                            <td>1,200,000</td>
+                            <td>2,100,000</td>
+                            <td></td>
+                            <td>수술방법의 차이</td>
+                        </tr>
+                        <tr>
+                            <td>시력교정술료</td>
+                            <td>레이저각막절삭성형술(라섹)</td>
+                            <td>2Z9620001</td>
+                            <td>베이직 라섹</td>
+                            <td></td>
+                            <td></td>
+                            <td>790,000</td>
+                            <td>1,400,000</td>
+                            <td></td>
+                            <td>수술방법의 차이</td>
+                        </tr>
+                        <tr>
+                            <td>시력교정술료</td>
+                            <td>레이저각막절삭성형술(라섹)</td>
+                            <td>2Z9620001</td>
+                            <td>2DAY 라섹</td>
+                            <td></td>
+                            <td></td>
+                            <td>1,090,000</td>
+                            <td>2,000,000</td>
+                            <td></td>
+                            <td>수술방법의 차이</td>
+                        </tr>
+                        <tr>
+                            <td>시력교정술료</td>
+                            <td>레이저각막절삭성형술(라섹)</td>
+                            <td>2Z9620001</td>
+                            <td>2DAY S라섹</td>
+                            <td></td>
+                            <td></td>
+                            <td>1,190,000</td>
+                            <td>2,100,000</td>
+                            <td></td>
+                            <td>수술방법의 차이</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-cont">
+                <h4>치료재료대</h4>
+                <table>
+                    <colgroup>
+                        <col style="width: 20%;">
+                        <col style="width: 10%;">
+                        <col style="width: 25%;">
+                        <col style="width: 5%;">
+                        <col style="width: 5%;">
+                        <col style="width: 5%;">
+                        <col style="width: 5%;">
+                        <col style="width: 5%;">
+                        <col style="width: 10%;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th rowspan="2">중분류</th>
+                            <th colspan="2">진료비용항목</th>
+                            <th colspan="5">항목별 가격정보(단위:원)</th>
+                            <th rowspan="2">특이사항</th>
+                        </tr>
+                        <tr>
+                            <th>코드</th>
+                            <th>명칭</th>
+                            <th>구분</th>
+                            <th>비용</th>
+                            <th>최저비용</th>
+                            <th>최고비용</th>
+                            <th>치료재료대포함</th>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0208EB</td>
+                            <td>ACRYSOF IQ PANOPTIX PRESBYOPIA-CORRECTING IOL</td>
+                            <td>단안</td>
+                            <td>3,296,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>급여 인정기준 외 실시한 경우 비급여</td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0200EB</td>
+                            <td>ACRYSOF IQ PANOPTIX TORIC PRESBYOPIA-CORRECTING IOL</td>
+                            <td>단안</td>
+                            <td>3,296,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0203OZ</td>
+                            <td>AT LISA 839MP</td>
+                            <td>단안</td>
+                            <td>2,796,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0204OZ</td>
+                            <td>AT LISA TRI TORIC 939M(P)</td>
+                            <td>단안</td>
+                            <td>2,796,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0208LN</td>
+                            <td>TECNIS SYNERGY OPTIBLUE IOL</td>
+                            <td>단안</td>
+                            <td>2,796,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0211EB</td>
+                            <td>클라레온 팬옵틱스</td>
+                            <td>단안</td>
+                            <td>3,796,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0212EB</td>
+                            <td>클라레온 팬옵틱스 토릭</td>
+                            <td>단안</td>
+                            <td>3,796,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0200LN</td>
+                            <td>TECNIS EYHANCE TORIC</td>
+                            <td>단안</td>
+                            <td>1,796,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0200FD</td>
+                            <td>SYNTHESIS PLUS</td>
+                            <td>단안</td>
+                            <td>2,046,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0207LN</td>
+                            <td>TECNIS EYHANCE IOL</td>
+                            <td>단안</td>
+                            <td>1,796,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0204EB</td>
+                            <td>ACRYSOF IQ TORIC NATURAL IOL(T2-T5)</td>
+                            <td>단안</td>
+                            <td>1,296,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0205EB</td>
+                            <td>ACRYSOF IQ TORIC NATURAL IOL(T6-T9)</td>
+                            <td>단안</td>
+                            <td>1,296,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0209EB</td>
+                            <td>ACRYSOF IQ VIVITY EXTENDED VISION IOL</td>
+                            <td>단안</td>
+                            <td>2,296,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0210EB</td>
+                            <td>ACRYSOF IQ VIVITY TORIC</td>
+                            <td>단안</td>
+                            <td>2,296,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0204HY</td>
+                            <td>ARTIS SYMBIOSE PLUS</td>
+                            <td>단안</td>
+                            <td>2,796,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0202OZ</td>
+                            <td>AT TORBI 709M</td>
+                            <td>단안</td>
+                            <td>1,296,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0203XQ</td>
+                            <td>INTENSITY BN/INTENSITY SL</td>
+                            <td>단안</td>
+                            <td>2,296,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0204HY</td>
+                            <td>ARTIS SYMBIOSE TORIC</td>
+                            <td>단안</td>
+                            <td>2,796,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0206OZ</td>
+                            <td>AT LARA TORIC 929M(P)</td>
+                            <td>단안</td>
+                            <td>796,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>조절성 인공수정체 (ACCOMMODATIVE IOL)</td>
+                            <td>BI0205OZ</td>
+                            <td>AT LARA 829MP</td>
+                            <td>단안</td>
+                            <td>796,010</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>보장구</td>
+                            <td>Z40340401</td>
+                            <td>굴절교정렌즈(드림렌즈)-Paragon CRT 100</td>
+                            <td>편측</td>
+                            <td>450,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>보장구</td>
+                            <td>Z40340402</td>
+                            <td>굴절교정렌즈(드림렌즈)-Paragon CRT 100 Dual Axis</td>
+                            <td>편측</td>
+                            <td>500,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>보장구</td>
+                            <td></td>
+                            <td>보장구 - 굴절교정렌즈(근시진행억제렌즈)-Misight contact lens</td>
+                            <td>편측</td>
+                            <td></td>
+                            <td>80,000</td>
+                            <td>100,000</td>
+                            <td></td>
+                            <td>할인율에 따라 다름</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>1회용렌즈(T-lens)</td>
+                            <td>1개</td>
+                            <td>10,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>렌즈보존액</td>
+                            <td>1개</td>
+                            <td>10,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>BI3001FU</td>
+                            <td>자가혈청 안약치료</td>
+                            <td></td>
+                            <td></td>
+                            <td>50,000</td>
+                            <td>100,000</td>
+                            <td></td>
+                            <td>용량에 따라 다름</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="map-wrap">
+            <div id="daumRoughmapContainer1769493770030" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+            <script charset="UTF-8">
+	            new daum.roughmap.Lander({
+		            "timestamp" : "1769493770030",
+		            "key" : "gpwv9e2su6f",
+		            "mapHeight" : "360"
+	            }).render();
+            </script>
+            <div class="roughmap"><img src="../../img/map_img.png"></div>
+        </div>
+        <div class="inner flex-wrap">
+            <div class="left">
+                <h3>Saeron Contact Us</h3>
+                <p>당신의 눈부신 내일, 그 시작을 함께하겠습니다.</p>
+                <div class="flex-wrap">
+                    <a href="#!" class="btn">네이버 길찾기</a>
+                    <a href="#!" class="btn">카카오맵 길찾기</a>
+                </div>
+            </div>
+            <div class="right">
+                <div class="flex-wrap">
+                    <h4 class="address">주소</h4><span>대구광역시 중구 달구벌대로 2207 (삼덕동2가)</span>
+                </div>
+                <div class="flex-wrap"><h4 class="time">진료시간</h4>
+                    <div class="week">
+                        <div class="flex-wrap"><p>월 화 목 금</p><span>am 09:00 ~ pm 06:00</span></div>
+                        <div class="flex-wrap"><p>토 요 일</p><span>am 09:00 ~ pm 04:00</span></div>
+                        <div class="flex-wrap"><p>점 심 시 간</p><span>pm 01:00 ~ pm 02:00</span></div>
+                        <div class="notice"><p><em class="red">수요일, 일요일, 공휴일 휴무</em>입니다.<br>
+                        공휴일 있는 주는 수요일 대체진료입니다.</p></div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <a class="flex-wrap" href="#!"><h4>전화번호</h4><span>053-719-2580</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="inner">
+            <ul class="top flex-wrap">
+                <li><a href="#!">병원소개</a></li>
+                <li><a href="#!">오시는 길</a></li>
+                <li><a href="#!">이용약관</a></li>
+                <li><a href="#!">개인정보처리방침</a></li>
+                <li><a href="#!">비급여항목</a></li>
+            </ul>
+            <div class="bottom">
+                <div class="clinic flex-wrap">
+                    <p>상호 :</p>
+                    <p>서울새론안과의원</p>
+                </div>
+                <div class="owner flex-wrap">
+                    <div class="txt">
+                        <p>대표자 :</p>
+                        <p>김재민</p>
+                    </div>
+                    <div class="txt">
+                        <p>주소 :</p>
+                        <p>대구광역시 중구 달구벌대로 2207 (삼덕동2가)</p>
+                    </div>
+                </div>
+                <div class="number flex-wrap">
+                    <div class="txt">
+                        <p>사업자등록번호 :</p>
+                        <p>109-96-78434</p>
+                    </div>
+                    <div class="txt">
+                        <p>전화번호 :</p>
+                        <p>053-719-2580</p>
+                    </div>
+                    <div class="txt">
+                        <p>팩스 :</p>
+                        <p>053-719-2540</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright"><p>© 2026 Seoul saeron ophthalmology clinic. All RIGHT RESERVED</p></div>
+    </footer>
+</body>
+</html>
