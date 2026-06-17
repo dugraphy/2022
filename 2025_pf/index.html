@@ -14,17 +14,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    <link rel="stylesheet" href="./css/main.css?ver=1.6"> <!-- 메인 CSS 최종 수정 25.02.22 -->
-
+    <link rel="stylesheet" href="./css/main.css?ver=1.7">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
     <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
-    <script src="./js/main.js?ver=1.6"></script> <!-- 메인JS 최종 수정 25.02.22 -->
-
+    <script src="./js/main.js?ver=1.7"></script>
 </head>
+
 <style>
     /* 로딩 스크린 */
     #loading-screen {
@@ -33,65 +32,85 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: #000;
+        background: #080808;
         display: flex;
         align-items: center;
         justify-content: center;
         z-index: 9999;
     }
+    #loading-screen .inner {
+        text-align: center;
+    }
     #loading-screen .inner img {
         display: block;
         margin: 0 auto;
-        width: 250px;
+        width: 200px;
+        opacity: 0.9;
     }
     .loading-text {
-        margin-top: 30px;
+        margin-top: 40px;
         display: flex;
         justify-content: center;
-        gap: 10px;
+        gap: 4px;
     }
     .loading-text p {
-        color: #fff;
-        font-size: 0.5rem;
+        color: rgba(255,255,255,0.5);
+        font-size: 0.55rem;
         font-weight: bold;
+        letter-spacing: 0.1em;
         opacity: 0;
         animation: jump 0.5s infinite steps(1);
     }
-    /* 각 글자에 지연 애니메이션 적용 */
-    .loading-text p:nth-child(1) { animation-delay: 0s; }
-    .loading-text p:nth-child(2) { animation-delay: 0.1s; }
-    .loading-text p:nth-child(3) { animation-delay: 0.2s; }
-    .loading-text p:nth-child(4) { animation-delay: 0.3s; }
-    .loading-text p:nth-child(5) { animation-delay: 0.4s; }
-    .loading-text p:nth-child(6) { animation-delay: 0.5s; }
-    .loading-text p:nth-child(7) { animation-delay: 0.6s; }
-    .loading-text p:nth-child(8) { animation-delay: 0.7s; }
-    .loading-text p:nth-child(9) { animation-delay: 0.8s; }
+    .loading-text p:nth-child(1)  { animation-delay: 0s; }
+    .loading-text p:nth-child(2)  { animation-delay: 0.1s; }
+    .loading-text p:nth-child(3)  { animation-delay: 0.2s; }
+    .loading-text p:nth-child(4)  { animation-delay: 0.3s; }
+    .loading-text p:nth-child(5)  { animation-delay: 0.4s; }
+    .loading-text p:nth-child(6)  { animation-delay: 0.5s; }
+    .loading-text p:nth-child(7)  { animation-delay: 0.6s; }
+    .loading-text p:nth-child(8)  { animation-delay: 0.7s; }
+    .loading-text p:nth-child(9)  { animation-delay: 0.8s; }
     .loading-text p:nth-child(10) { animation-delay: 0.9s; }
-
     @keyframes jump {
-        0%, 100% { transform: translateY(0); opacity: 1; }
-        50% { transform: translateY(-30%); }
+        0%, 100% { transform: translateY(0); opacity: 0.5; }
+        50%       { transform: translateY(-4px); opacity: 1; }
     }
-
-    /* 로딩 화면 숨기기 */
     @keyframes fadeOut {
         from { opacity: 1; }
-        to { opacity: 0; visibility: hidden; }
+        to   { opacity: 0; visibility: hidden; }
+    }
+
+    /* 섹션 공통 레이블 */
+    .sec-label {
+        display: block;
+        font-size: 0.6rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        opacity: 0.35;
+        margin-bottom: 14px;
+        font-family: 's-core-dream-medium';
     }
 </style>
+
 <script>
     setTimeout(() => {
-            document.getElementById('loading-screen').style.animation = 'fadeOut 1s forwards';
-        }, 2000);
+        document.getElementById('loading-screen').style.animation = 'fadeOut 0.8s forwards';
+    }, 2000);
 </script>
+
 <div id="loading-screen">
     <div class="inner">
         <img src="./img/h_logo.png" alt="">
-        <div class="loading-text"><p>L</p><p>O</p><p>A</p><p>D</p><p>I</p><p>N</p><p>G</p><p>.</p><p>.</p><p>.</p></div>
+        <div class="loading-text">
+            <p>L</p><p>O</p><p>A</p><p>D</p><p>I</p><p>N</p><p>G</p><p>.</p><p>.</p><p>.</p>
+        </div>
     </div>
 </div>
+
 <body>
+    <!-- ==============================
+         HEADER
+    ============================== -->
     <header id="header">
         <div class="inner flex">
             <h1><a href="#"><img src="./img/h_logo.png" alt="상단 로고 이미지"></a></h1>
@@ -110,45 +129,48 @@
             </div>
         </div>
     </header>
+
+    <!-- ==============================
+         MAIN HERO
+    ============================== -->
     <section id="main" class="sec">
         <div class="inner fixed">
             <div class="main-title">
                 <div class="title-box box-01">
-                    <h2 class="title">
-                        '선(Line)'
-                    </h2>
+                    <h2 class="title">'선(Line)'</h2>
                     <p class="text">무엇이 떠오르시나요?</p>
                 </div>
                 <div class="title-box box-02">
                     <em>사전적 의미</em>
-                    <h2 class="title">
-                        '선(Line)'
-                    </h2>
+                    <h2 class="title">'선(Line)'</h2>
                     <em>명사</em>
                     <p class="text">1. 그어 놓은 금이나 줄.</p>
                     <p class="text">2. 물체의 윤곽을 이루는 부분.</p>
                 </div>
                 <div class="title-box box-03">
                     <em>나에게 선이란?</em>
-                    <h2 class="title">
-                        '선(Line)'
-                    </h2>
+                    <h2 class="title">'선(Line)'</h2>
                     <p class="text">1. 첫번째(First).</p>
                     <p class="text">2. 정확한(Right).</p>
                     <p class="text">3. 임팩트(Impact).</p>
                 </div>
                 <div class="title-box box-04">
                     <h2 class="title">
-                        먼저(first) 정확한(right) 시각으로 바라보는<br>
+                        먼저(first) 정확한(right) 시각으로 바라보는<br class="pc-br">
                         임팩트(impact)있는 디자이너입니다.
                     </h2>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ==============================
+         SEC-01  MAIN WEB DESIGN
+    ============================== -->
     <section id="sec-01" class="sec">
         <div class="inner">
             <div class="left">
+                <span class="sec-label">01 — Main Web</span>
                 <h2 class="title">
                     Main Web Design<br>
                     Portfolio
@@ -172,7 +194,8 @@
                 </div>
             </div>
             <div class="right">
-                <div><img src="./img/confirm.jpg" alt="컨펌 로고 이미지">
+                <div>
+                    <img src="./img/confirm.jpg" alt="컨펌 로고 이미지">
                     <div class="text">
                         <h3 class="name">병원 컨설팅 컨펌</h3>
                         <p class="web">반응형 홈페이지 (2p)</p>
@@ -184,7 +207,8 @@
                         <p class="tool">JavaScript-jQurey</p>
                     </div>
                 </div>
-                <div><img src="./img/jiune.jpg" alt="지유네피부과의원 로고 이미지">
+                <div>
+                    <img src="./img/jiune.jpg" alt="지유네피부과의원 로고 이미지">
                     <div class="text">
                         <h3 class="name">지유네피부과의원</h3>
                         <p class="web">반응형 홈페이지 (26p)</p>
@@ -198,7 +222,8 @@
                         <p class="tool">SEO - Searchadvisor</p>
                     </div>
                 </div>
-                <div><img src="./img/loar.jpg" alt="로아르피부과의원 로고 이미지">
+                <div>
+                    <img src="./img/loar.jpg" alt="로아르피부과의원 로고 이미지">
                     <div class="text">
                         <h3 class="name">로아르피부과의원</h3>
                         <p class="web">반응형 서브페이지 (3p)</p>
@@ -211,7 +236,8 @@
                         <p class="tool">JavaScript-jQurey</p>
                     </div>
                 </div>
-                <div><img src="./img/onzy.jpg" alt="온지프롤로의원 로고 이미지">
+                <div>
+                    <img src="./img/onzy.jpg" alt="온지프롤로의원 로고 이미지">
                     <div class="text">
                         <h3 class="name">온지프롤로의원</h3>
                         <p class="web">반응형 랜딩페이지 (1p)</p>
@@ -224,7 +250,8 @@
                         <p class="tool">JavaScript-jQurey</p>
                     </div>
                 </div>
-                <div><img src="./img/sclass.jpg" alt="에스클래스성형외과의원 로고 이미지">
+                <div>
+                    <img src="./img/sclass.jpg" alt="에스클래스성형외과의원 로고 이미지">
                     <div class="text">
                         <h3 class="name">에스클래스성형외과의원</h3>
                         <p class="web">적응형 메인페이지 (pc, mo)</p>
@@ -239,9 +266,14 @@
             </div>
         </div>
     </section>
+
+    <!-- ==============================
+         SEC-02  RE-DESIGN
+    ============================== -->
     <section id="sec-02" class="sec">
         <div class="inner">
             <div class="title">
+                <span class="sec-label">02 — Redesign Web</span>
                 <h2>Web Re-Design Portfolio</h2>
             </div>
             <div class="img-box">
@@ -264,6 +296,10 @@
             </div>
         </div>
     </section>
+
+    <!-- ==============================
+         SEC-03  REFERENCE
+    ============================== -->
     <section id="sec-03" class="sec">
         <div class="inner flex">
             <div class="box left-box">
@@ -316,6 +352,7 @@
             </div>
             <div class="box center-box">
                 <div class="title">
+                    <span class="sec-label">03 — Reference</span>
                     <h2>Reference <br>Portfolio</h2>
                     <a href="./download/reference_list.pdf" download="행사_리스트">행사 리스트 Download</a>
                 </div>
@@ -370,9 +407,14 @@
             </div>
         </div>
     </section>
+
+    <!-- ==============================
+         SEC-04  POSTER DESIGN
+    ============================== -->
     <section id="sec-04" class="sec">
         <div class="inner">
             <div class="title">
+                <span class="sec-label">04 — Poster Design</span>
                 <h2>Poster Design Portfolio <span>(2022 - 2024)</span></h2>
             </div>
             <div class="pagination">
@@ -383,9 +425,14 @@
             </div>
         </div>
     </section>
+
+    <!-- ==============================
+         SEC-05  SNS DESIGN
+    ============================== -->
     <section id="sec-05" class="sec">
         <div class="inner">
             <div class="title">
+                <span class="sec-label">05 — SNS Design</span>
                 <h2>SNS Design Portfolio <span>(2022 - 2024)</span></h2>
             </div>
             <div class="slider">
@@ -429,24 +476,35 @@
             </div>
         </div>
     </section>
+
+    <!-- ==============================
+         SEC-06  PROFILE
+    ============================== -->
     <section id="sec-06" class="sec">
         <div class="inner">
             <div class="title">
+                <span class="sec-label">06 — Profile</span>
                 <h2>Profile</h2>
             </div>
             <div class="profile flex">
-                <div class="img-box"><img src="./img/profile.jpg" alt="프로필 이미지"></div>
+                <div class="img-box">
+                    <img src="./img/profile.jpg" alt="프로필 이미지">
+                </div>
                 <div class="text">
-                    <div class="user"><img src="./img/user.png" alt="유저 이미지">
+                    <div class="user">
+                        <img src="./img/user.png" alt="유저 이미지">
                         <p>이 동욱</p>
                     </div>
-                    <div class="mobile"><img src="./img/mobile.png" alt="휴대폰 이미지">
+                    <div class="mobile">
+                        <img src="./img/mobile.png" alt="휴대폰 이미지">
                         <p>010. 5874. 9316</p>
                     </div>
-                    <div class="kakaotalk"><img src="./img/kakaotalk.png" alt="카카오톡 이미지">
+                    <div class="kakaotalk">
+                        <img src="./img/kakaotalk.png" alt="카카오톡 이미지">
                         <p>aplus2470</p>
                     </div>
-                    <div class="email"><img src="./img/email.png" alt="이메일 이미지">
+                    <div class="email">
+                        <img src="./img/email.png" alt="이메일 이미지">
                         <p>aqua2470@naver.com</p>
                     </div>
                 </div>
@@ -456,7 +514,7 @@
                     <div class="education">
                         <h3>Education</h3>
                         <p>- 동의과학대학교 산업디자인과 졸업 <span>(3.8 / 4.5)</span></p>
-                        <p>- 그린컴퓨터아카데미 반응형 웹디자인(UIUX) & 웹퍼블리셔 수료</p>
+                        <p>- 그린컴퓨터아카데미 반응형 웹디자인(UIUX) &amp; 웹퍼블리셔 수료</p>
                     </div>
                     <div class="license">
                         <h3>License</h3>
@@ -482,6 +540,10 @@
             </div>
         </div>
     </section>
+
+    <!-- ==============================
+         FOOTER
+    ============================== -->
     <footer id="footer">
         <div class="inner">
             <div class="f-logo">
@@ -502,13 +564,17 @@
 
 </html>
 
-<!-- POSTER POPUP -->
+<!-- ==============================
+     POSTER POPUP
+============================== -->
 <div id="poster-popup" class="popup">
     <img class="close" src="./img/close.png" alt="팝업 닫기 이미지">
     <img class="popup-content" id="popupImg">
 </div>
 
-<!-- SNS POPUP -->
+<!-- ==============================
+     SNS POPUP
+============================== -->
 <div class="pop-img popup-01">
     <img class="close" src="./img/close.png" alt="팝업 닫기 이미지">
     <div class="pop-slider">
